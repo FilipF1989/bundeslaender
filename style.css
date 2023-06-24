@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+#bundeslaenderContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+.navBar {
+    width: 100%;
+    padding-left: 1rem;
+    background-color: gray;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.mainContent {
+    width: 101%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    width: 33%;
+    text-decoration: none;
+    color:black ;
+}
+
+.bundesland {
+    border: 10px solid lightgray;
+    margin: .3rem;
+}
+
+.landName {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.landPopulation {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(150,186,221);
+}
+
+#filterContainer {
+    max-width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.letters{
+    width: 30px;
+    height: 30px;
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media  screen and (max-width:800px) {
+    #bundeslaenderContainer {
+        width:100%;
+    }
+
+    .mainContent {
+        width: 100%;
+    }
+
+    a {
+        width: 50%;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    a {
+        width: 100%;
+    }
+}
+
+
